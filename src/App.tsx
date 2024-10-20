@@ -1,4 +1,4 @@
-import CoolText from "./components/ui/cool-text";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 function App() {
   return (
@@ -6,7 +6,7 @@ function App() {
       <h1 className="text-2xl font-bold text-gray-900 mb-4">Custom Registry</h1>
       <p>Add your custom components here to preview them.</p>
 
-      <CoolText>This is a custom component.</CoolText>
+      <ThemeToggle />
     </div>
   );
 }

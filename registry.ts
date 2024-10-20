@@ -2,14 +2,14 @@ import { RegistryEntry } from "./scripts/schema";
 
 const registry: RegistryEntry[] = [
   {
-    name: "cool-text",
+    name: "theme",
     type: "registry:ui",
 
     // shadcn-ui components that this component depends on
-    registryDependencies: ["button"],
+    registryDependencies: ["button", "dropdown-menu"],
 
     // npm dependencies that this component depends on
-    dependencies: [],
+    dependencies: ["next-themes", "@radix-ui/react-icons"],
     devDependencies: [],
 
     // Tailwind CSS config
@@ -21,7 +21,7 @@ const registry: RegistryEntry[] = [
     cssVars: {},
 
     // Files that make up this component in your src/components/ui folder
-    files: ["cool-text.tsx"],
+    files: ["theme-toggle.tsx"],
   },
 ];
 export default registry;
