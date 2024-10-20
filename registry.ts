@@ -21,7 +21,7 @@ const registry: RegistryEntry[] = [
     cssVars: {},
 
     // Files that make up this component in your src/components/ui folder
-    files: ["theme-toggle.tsx"],
+    files: ["theme.tsx"],
   },
 ];
 export default registry;

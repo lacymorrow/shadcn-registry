@@ -1,8 +1,8 @@
-import { readFile, writeFile } from "fs/promises";
-import { RegistryEntry } from "./schema";
-import registryConfig from "../registry.ts";
-import { getGitHubBaseUrl } from "./utils.ts";
 import chalk from "chalk";
+import { readFile, writeFile } from "fs/promises";
+import registryConfig from "../registry.ts";
+import { RegistryEntry } from "./schema";
+import { getGitHubBaseUrl } from "./utils.ts";
 
 console.log("Building registry...");
 
@@ -31,7 +31,7 @@ for (const registryData of registryConfig) {
   );
 
   const gitHub = `${baseUrl}/${registry.name}.json`;
-  const local = `http://127.0.0.1:8081/${registry.name}.json`;
+  const local = `http://localhost:8080/${registry.name}.json`;
 
   console.log(
     `Registry built for ${chalk.green.bold(registry.name)}:
